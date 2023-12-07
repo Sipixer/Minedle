@@ -12,8 +12,6 @@
 
 body {
   background-image: url("/img/background.jpg");
-  background-attachment: scroll;
-  background-size: cover;
 }
 
 .table {

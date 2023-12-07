@@ -12,7 +12,7 @@ let rerenderTime = 0;
 
 type GameStatus = {
   difficulty: "easy" | "normal" | "hard";
-  status: "menu" | "guessing" | "finished";
+  status: "menu" | "guessing" | "win" | "loose";
   type: "solo" | "multi";
 };
 
@@ -43,12 +43,19 @@ export function goToMenu() {
   rerender();
 }
 
+export function soloWin(attempts: number) {
+  gameStatus.status = "win";
+  alert(`You win in ${attempts} attempts`);
+  rerender();
+}
+
 export function rerender() {
   rerenderTime++;
   if (!app) return;
   app.innerHTML = "";
   if (gameStatus.status === "menu") mainMenuRender(app);
   if (gameStatus.status === "guessing") gameRender(app);
+  if (gameStatus.status === "win") mainMenuRender(app);
 }
 
 function mainMenuRender(app: HTMLDivElement) {
@@ -60,9 +67,9 @@ function mainMenuRender(app: HTMLDivElement) {
   mainMenuComponents.forEach((component) => app.appendChild(component));
 }
 
-function gameRender(app: HTMLDivElement) {
+async function gameRender(app: HTMLDivElement) {
   app.innerHTML = "";
-  app.appendChild(Game(i18next));
+  app.appendChild(await Game(i18next));
 }
 
 i18next.on("languageChanged", rerender);

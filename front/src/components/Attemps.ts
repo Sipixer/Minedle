@@ -1,21 +1,24 @@
 import { i18n } from "i18next";
-import { Mobs, mobs } from "../data/mobs";
 import { getTranslatedString } from "../utils/translation";
 import { Button } from "./Button";
-import { goToMenu } from "../main";
+import { goToMenu, soloWin } from "../main";
+import { MobGuessDiff, TranslatedString } from "../type/type";
+import { URL } from "../utils/variables";
 
 export class Attempts {
   private container: HTMLDivElement;
   private i18next: i18n;
-  private attempts = [] as string[];
+  private gameID: string;
+  private attempts = [] as MobGuessDiff[];
   private table?: HTMLTableElement;
 
   private attemptsText: HTMLDivElement;
 
-  constructor(i18next: i18n) {
+  constructor(i18next: i18n, gameId: string) {
     this.container = document.createElement("div");
     this.container.classList.add("attempts");
     this.i18next = i18next;
+    this.gameID = gameId;
 
     const div = document.createElement("div");
     div.classList.add("attemptsHeader");
@@ -44,10 +47,26 @@ export class Attempts {
     return this.container;
   }
 
-  public addAttempt(mobId: string) {
-    this.attempts.push(mobId);
-    this.renderNewAttempt(mobs.find((mob) => mob.id === mobId));
-    this.renderAtemptText();
+  public async addAttempt(mobId: string) {
+    const reponse = await fetch(URL + "guess", {
+      method: "POST",
+      body: JSON.stringify({ guess: mobId, sessionId: this.gameID }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    if (!reponse.ok) {
+      reponse.text().then((text) => {
+        alert(text);
+      });
+    }
+    const json = await reponse.json();
+    if (json.guess) {
+      soloWin(this.attempts.length + 1);
+      return;
+    }
+    const diff = json as MobGuessDiff;
+    this.renderNewAttempt(diff);
   }
 
   private renderTable() {
@@ -73,36 +92,40 @@ export class Attempts {
     return table;
   }
 
-  private renderNewAttempt(mob?: Mobs[0]) {
-    if (!mob) return;
+  private renderNewAttempt(diff?: MobGuessDiff) {
+    if (!diff) return;
+    this.attempts.push(diff);
+    this.renderAtemptText();
+
     if (!this.table) {
       this.table = this.renderTable();
       this.container.appendChild(this.table);
     }
 
     const row = this.table.insertRow();
-    imageCell(row.insertCell(), mob);
-    mobCell(row.insertCell(), { compare: true, value: "hostile" });
-    mobCell(row.insertCell(), { compare: false, value: "20" });
-    mobCell(row.insertCell(), { compare: -1, value: "3" });
-    mobCell(row.insertCell(), { compare: 0, value: "1.95" });
-    mobCell(row.insertCell(), { compare: 1, value: "0.6" });
-    mobCell(row.insertCell(), { compare: false, value: "monstre" });
-    mobCell(row.insertCell(), {
-      compare: 1,
-      value: "Classique 0.24 (14 août 2009)",
-    });
+    imageCell(row.insertCell(), diff.image, diff.name);
+
+    mobCell(row.insertCell(), diff.behaviour);
+    mobCell(row.insertCell(), diff.health);
+    mobCell(row.insertCell(), diff.damage);
+    mobCell(row.insertCell(), diff.height);
+    mobCell(row.insertCell(), diff.width);
+    mobCell(row.insertCell(), diff.type);
+    mobCell(row.insertCell(), diff.version);
 
     this.table.appendChild(row);
-    console.log(mob);
   }
 }
 
-function imageCell(imageCell: HTMLTableCellElement, mob: Mobs[0]) {
+function imageCell(
+  imageCell: HTMLTableCellElement,
+  _image: string,
+  name: TranslatedString
+) {
   const image = document.createElement("img");
-  image.src = `img/mobs/${mob.image}`;
-  image.alt = getTranslatedString(mob.name);
-  image.title = getTranslatedString(mob.name);
+  image.src = `img/mobs/${_image}`;
+  image.alt = getTranslatedString(name);
+  image.title = getTranslatedString(name);
   image.style.maxWidth = "120px";
   image.style.maxHeight = "120px";
   imageCell.appendChild(image);

@@ -40,13 +40,15 @@ function renderSuggestions(
   onGuess: (mobId: string) => void
 ) {
   container.innerHTML = "";
-  if (value.length === 0) return;
 
-  const filteredSuggestions = mobs.filter((mob) =>
-    Object.values(mob.name).some((name) =>
-      name.toLowerCase().includes(value.toLowerCase())
-    )
-  );
+  const filteredSuggestions =
+    value.length <= 0
+      ? mobs
+      : mobs.filter((mob) =>
+          Object.values(mob.name).some((name) =>
+            name.toLowerCase().includes(value.toLowerCase())
+          )
+        );
 
   if (filteredSuggestions.length === 0) {
     container.appendChild(document.createTextNode("No suggestions"));

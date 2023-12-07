@@ -1,0 +1,1164 @@
+[
+  {
+    "name": {
+      "en": "creeper",
+      "fr": "creeper"
+    },
+    "image": "creeper.png",
+    "behavior": "hostile",
+    "health": 20,
+    "type": "monstre",
+    "damage": 43,
+    "height": 1.7,
+    "width": 0.6,
+    "version": "Alpha 1.0.11"
+  },
+  {
+    "name": {
+      "en": "zombie",
+      "fr": "zombie"
+    },
+    "image": "zombie.png",
+    "behavior": "hostile",
+    "health": 20,
+    "type": "monstre",
+    "damage": 3,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "Classique 0.24 (14 août 2009)"
+  },
+  {
+    "name": {
+      "en": "skeleton",
+      "fr": "squelette"
+    },
+    "image": "skeleton.png",
+    "behavior": "hostile",
+    "health": 20,
+    "type": "monstre",
+    "damage": 4,
+    "height": 1.99,
+    "width": 0.6,
+    "version": "Alpha 1.0.0"
+  },
+  {
+    "name": {
+      "en": "spider",
+      "fr": "araignée"
+    },
+    "image": "spider.png",
+    "behavior": "neutral",
+    "health": 16,
+    "type": "monstre",
+    "damage": 2,
+    "height": 0.9,
+    "width": 1.4,
+    "version": "Alpha 1.0.0"
+  },
+  {
+    "name": {
+      "en": "enderman",
+      "fr": "enderman"
+    },
+    "image": "enderman.png",
+    "behavior": "neutral",
+    "health": 40,
+    "type": "monstre",
+    "damage": 7,
+    "height": 2.9,
+    "width": 0.6,
+    "version": "Beta 1.8"
+  },
+  {
+    "name": {
+      "en": "slime",
+      "fr": "slime"
+    },
+    "image": "slime.png",
+    "behavior": "passive",
+    "health": 16,
+    "type": "monstre",
+    "damage": 4,
+    "height": 2.04,
+    "width": 2.04,
+    "version": "Alpha 1.0.0"
+  },
+  {
+    "name": {
+      "en": "ghast",
+      "fr": "ghast"
+    },
+    "image": "ghast.png",
+    "behavior": "hostile",
+    "health": 10,
+    "type": "monstre",
+    "damage": 17,
+    "height": 4,
+    "width": 4,
+    "version": "Beta 1.9pre6"
+  },
+  {
+    "name": {
+      "en": "blaze",
+      "fr": "blaze"
+    },
+    "image": "blaze.png",
+    "behavior": "hostile",
+    "health": 20,
+    "type": "monstre",
+    "damage": 6,
+    "height": 1.8,
+    "width": 0.6,
+    "version": "1.0.0 (11w48a)"
+  },
+  {
+    "name": {
+      "en": "guardian",
+      "fr": "gardien"
+    },
+    "image": "guardian.png",
+    "behavior": "hostile",
+    "health": 30,
+    "type": "monstre",
+    "damage": 6,
+    "height": 0.85,
+    "width": 0.85,
+    "version": "1.8 (14w25a)"
+  },
+  {
+    "name": {
+      "en": "cow",
+      "fr": "vache"
+    },
+    "image": "cow.png",
+    "behavior": "passive",
+    "health": 10,
+    "type": "animal",
+    "damage": 0,
+    "height": 1.4,
+    "width": 0.9,
+    "version": "Alpha 1.0.0"
+  },
+  {
+    "name": {
+      "en": "pig",
+      "fr": "cochon"
+    },
+    "image": "pig.png",
+    "behavior": "passive",
+    "health": 10,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.9,
+    "width": 0.9,
+    "version": "Alpha 1.0.0"
+  },
+  {
+    "name": {
+      "en": "chicken",
+      "fr": "poulet"
+    },
+    "image": "chicken.png",
+    "behavior": "passive",
+    "health": 4,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.7,
+    "width": 0.4,
+    "version": "Alpha 1.0.0"
+  },
+  {
+    "name": {
+      "en": "sheep",
+      "fr": "mouton"
+    },
+    "image": "sheep.png",
+    "behavior": "passive",
+    "health": 8,
+    "type": "animal",
+    "damage": 0,
+    "height": 1.3,
+    "width": 0.9,
+    "version": "Alpha 1.0.0"
+  },
+  {
+    "name": {
+      "en": "endermite",
+      "fr": "endermite"
+    },
+    "image": "endermite.png",
+    "behavior": "hostile",
+    "health": 8,
+    "type": "monstre",
+    "damage": 2,
+    "height": 0.3,
+    "width": 0.4,
+    "version": "1.8 (14w11a)"
+  },
+  {
+    "name": {
+      "en": "stray",
+      "fr": "vagabond"
+    },
+    "image": "stray.png",
+    "behavior": "hostile",
+    "health": 20,
+    "type": "monstre",
+    "damage": 5,
+    "height": 1.99,
+    "width": 0.6,
+    "version": "1.10 (16w20a)"
+  },
+  {
+    "name": {
+      "en": "vindicator",
+      "fr": "vindicteur"
+    },
+    "image": "vindicator.png",
+    "behavior": "hostile",
+    "health": 24,
+    "type": "monstre",
+    "damage": 13,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "1.11 (16w39a)"
+  },
+  {
+    "name": {
+      "en": "phantom",
+      "fr": "fantôme"
+    },
+    "image": "phantom.png",
+    "behavior": "hostile",
+    "health": 20,
+    "type": "monstre",
+    "damage": 6,
+    "height": 0.5,
+    "width": 0.9,
+    "version": "1.13 (18w07a)"
+  },
+  {
+    "name": {
+      "en": "parrot",
+      "fr": "perroquet"
+    },
+    "image": "parrot.png",
+    "behavior": "passive",
+    "health": 6,
+    "type": "animal",
+    "damage": 0,
+    "height": 1,
+    "width": 0.5,
+    "version": "1.12 (17w13a)"
+  },
+  {
+    "name": {
+      "en": "dolphin",
+      "fr": "dauphin"
+    },
+    "image": "dolphin.png",
+    "behavior": "neutral",
+    "health": 10,
+    "type": "animal",
+    "damage": 3,
+    "height": 0.6,
+    "width": 0.9,
+    "version": "1.13 (18w07a)"
+  },
+  {
+    "name": {
+      "en": "turtle",
+      "fr": "tortue"
+    },
+    "image": "turtle.png",
+    "behavior": "passive",
+    "health": 30,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.4,
+    "width": 1.2,
+    "version": "1.13 (18w07a)"
+  },
+  {
+    "name": {
+      "en": "panda",
+      "fr": "panda"
+    },
+    "image": "panda.png",
+    "behavior": "neutral",
+    "health": 20,
+    "type": "animal",
+    "damage": 6,
+    "height": 1.25,
+    "width": 1.3,
+    "version": "1.14 (18w43a)"
+  },
+  {
+    "name": {
+      "en": "cave_spider",
+      "fr": "araignée de cave"
+    },
+    "image": "cave_spider.png",
+    "behavior": "neutral",
+    "health": 12,
+    "type": "monstre",
+    "damage": 2,
+    "height": 0.5,
+    "width": 0.7,
+    "version": "Beta 1.8"
+  },
+  {
+    "name": {
+      "en": "silverfish",
+      "fr": "poisson d'argent"
+    },
+    "image": "silverfish.png",
+    "behavior": "hostile",
+    "health": 8,
+    "type": "monstre",
+    "damage": 1,
+    "height": 0.3,
+    "width": 0.4,
+    "version": "Beta 1.8"
+  },
+  {
+    "name": {
+      "en": "magma cube",
+      "fr": "cube de magma"
+    },
+    "image": "magma_cube.png",
+    "behavior": "hostile",
+    "health": 16,
+    "type": "monstre",
+    "damage": 6,
+    "height": 2.04,
+    "width": 2.04,
+    "version": "Beta 1.9pre2"
+  },
+  {
+    "name": {
+      "en": "shulker",
+      "fr": "shulker"
+    },
+    "image": "shulker.png",
+    "behavior": "hostile",
+    "health": 30,
+    "type": "monstre",
+    "damage": 4,
+    "height": 1,
+    "width": 1,
+    "version": "1.9 (15w31a)"
+  },
+  {
+    "name": {
+      "en": "wither_skeleton",
+      "fr": "wither squelette"
+    },
+    "image": "wither_skeleton.png",
+    "behavior": "hostile",
+    "health": 20,
+    "type": "monstre",
+    "damage": 8,
+    "height": 2.4,
+    "width": 0.7,
+    "version": "1.4.2 (12w36a)"
+  },
+  {
+    "name": {
+      "en": "evoker",
+      "fr": "invoqueur"
+    },
+    "image": "evoker.png",
+    "behavior": "hostile",
+    "health": 24,
+    "type": "monstre",
+    "damage": 6,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "1.11 (16w39a)"
+  },
+  {
+    "name": {
+      "en": "vex",
+      "fr": "vex"
+    },
+    "image": "vex.png",
+    "behavior": "hostile",
+    "health": 14,
+    "type": "monstre",
+    "damage": 9,
+    "height": 0.8,
+    "width": 0.4,
+    "version": "1.11 (16w39a)"
+  },
+  {
+    "name": {
+      "en": "ravager",
+      "fr": "ravageur"
+    },
+    "image": "ravager.png",
+    "behavior": "hostile",
+    "health": 100,
+    "type": "monstre",
+    "damage": 12,
+    "height": 1.9,
+    "width": 1.2,
+    "version": "1.14 (18w43a)"
+  },
+  {
+    "name": {
+      "en": "pillager",
+      "fr": "pillard"
+    },
+    "image": "pillager.png",
+    "behavior": "hostile",
+    "health": 24,
+    "type": "monstre",
+    "damage": 4,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "1.14 (18w43a)"
+  },
+  {
+    "name": {
+      "en": "ender dragon",
+      "fr": "ender dragon"
+    },
+    "image": "ender_dragon.png",
+    "behavior": "hostile",
+    "health": 200,
+    "type": "boss",
+    "damage": 10,
+    "height": 8,
+    "width": 16,
+    "version": "1.0.0 (11w48a)"
+  },
+  {
+    "name": {
+      "en": "piglin",
+      "fr": "piglin"
+    },
+    "image": "piglin.png",
+    "behavior": "neutral",
+    "health": 16,
+    "type": "monstre",
+    "damage": 8,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "1.16 (20w07a)"
+  },
+  {
+    "name": {
+      "en": "hoglin",
+      "fr": "hoglin"
+    },
+    "image": "hoglin.png",
+    "behavior": "hostile",
+    "health": 40,
+    "type": "monstre",
+    "damage": 8,
+    "height": 1.4,
+    "width": 1.3965,
+    "version": "1.16 (20w07a)"
+  },
+  {
+    "name": {
+      "en": "strider",
+      "fr": "arpenteur"
+    },
+    "image": "strider.png",
+    "behavior": "passive",
+    "health": 20,
+    "type": "monstre",
+    "damage": 0,
+    "height": 1.7,
+    "width": 0.9,
+    "version": "1.16 (20w07a)"
+  },
+  {
+    "name": {
+      "en": "axolotl",
+      "fr": "axolotl"
+    },
+    "image": "axolotl.png",
+    "behavior": "neutral",
+    "health": 14,
+    "type": "animal",
+    "damage": 2,
+    "height": 0.6,
+    "width": 1.3,
+    "version": "1.17 (20w51a)"
+  },
+  {
+    "name": {
+      "en": "glow_squid",
+      "fr": "poulpe luisant"
+    },
+    "image": "glow_squid.png",
+    "behavior": "passive",
+    "health": 10,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.8,
+    "width": 0.8,
+    "version": "1.17 (20w45a)"
+  },
+  {
+    "name": {
+      "en": "goat",
+      "fr": "chèvre"
+    },
+    "image": "goat.png",
+    "behavior": "neutral",
+    "health": 10,
+    "type": "animal",
+    "damage": 2,
+    "height": 1.3,
+    "width": 0.9,
+    "version": "1.17 (20w51a)"
+  },
+  {
+    "name": {
+      "en": "warden",
+      "fr": "warden"
+    },
+    "image": "warden.png",
+    "behavior": "hostile",
+    "health": 500,
+    "type": "monstre",
+    "damage": 30,
+    "height": 2.9,
+    "width": 0.9,
+    "version": "1.19 (22w11a)"
+  },
+  {
+    "name": {
+      "en": "frog",
+      "fr": "grenouille"
+    },
+    "image": "frog.png",
+    "behavior": "passive",
+    "health": 10,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.5,
+    "width": 0.5,
+    "version": "1.19 (23w37a)"
+  },
+  {
+    "name": {
+      "en": "allay",
+      "fr": "allay"
+    },
+    "image": "allay.png",
+    "behavior": "passive",
+    "health": 20,
+    "type": "monstre",
+    "damage": 0,
+    "height": 0.6,
+    "width": 0.6,
+    "version": "1.19 (22w13a)"
+  },
+  {
+    "name": {
+      "en": "wither",
+      "fr": "wither"
+    },
+    "image": "wither.png",
+    "behavior": "hostile",
+    "health": 300,
+    "type": "boss",
+    "damage": 8,
+    "height": 3.5,
+    "width": 0.9,
+    "version": "1.4.2 (12w34a)"
+  },
+  {
+    "name": {
+      "en": "wandering trader",
+      "fr": "marchand errant"
+    },
+    "image": "wandering_trader.png",
+    "behavior": "neutral",
+    "health": 20,
+    "type": "villageois",
+    "damage": 0,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "1.14 (18w45a)"
+  },
+  {
+    "name": {
+      "en": "drowned",
+      "fr": "noyé"
+    },
+    "image": "drowned.png",
+    "behavior": "hostile",
+    "health": 20,
+    "type": "monstre",
+    "damage": 11,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "1.13 (18w11a)"
+  },
+  {
+    "name": {
+      "en": "zoglin",
+      "fr": "zoglin"
+    },
+    "image": "zoglin.png",
+    "behavior": "hostile",
+    "health": 40,
+    "type": "monstre",
+    "damage": 3,
+    "height": 1.4,
+    "width": 1.3965,
+    "version": "1.16 (20w07a)"
+  },
+  {
+    "name": {
+      "en": "bee",
+      "fr": "abeille"
+    },
+    "image": "bee.png",
+    "behavior": "neutral",
+    "health": 10,
+    "type": "animal",
+    "damage": 2,
+    "height": 0.6,
+    "width": 0.7,
+    "version": "1.15 (19w34a)"
+  },
+  {
+    "name": {
+      "en": "fox",
+      "fr": "renard"
+    },
+    "image": "fox.png",
+    "behavior": "neutral",
+    "health": 10,
+    "type": "animal",
+    "damage": 2,
+    "height": 0.7,
+    "width": 0.6,
+    "version": "1.14 (19w07a)"
+  },
+  {
+    "name": {
+      "en": "iron_golem",
+      "fr": "golem de fer"
+    },
+    "image": "iron_golem.png",
+    "behavior": "neutral",
+    "health": 100,
+    "type": "protecteur",
+    "damage": 21.5,
+    "height": 2.7,
+    "width": 1.4,
+    "version": "1.2.1 (12w08a)"
+  },
+  {
+    "name": {
+      "en": "snow_golem",
+      "fr": "golem de neige"
+    },
+    "image": "snow_golem.png",
+    "behavior": "passive",
+    "health": 4,
+    "type": "protecteur",
+    "damage": 3,
+    "height": 1.9,
+    "width": 0.7,
+    "version": "Beta 1.9pre1"
+  },
+  {
+    "name": {
+      "en": "llama",
+      "fr": "lama"
+    },
+    "image": "llama.png",
+    "behavior": "neutral",
+    "health": 15,
+    "type": "animal",
+    "damage": 1,
+    "height": 1.87,
+    "width": 0.9,
+    "version": "1.11 (16w39a)"
+  },
+  {
+    "name": {
+      "en": "ocelot",
+      "fr": "ocelot"
+    },
+    "image": "ocelot.png",
+    "behavior": "passive",
+    "health": 10,
+    "type": "animal",
+    "damage": 3,
+    "height": 0.7,
+    "width": 0.6,
+    "version": "1.2.1 (12w04a)"
+  },
+  {
+    "name": {
+      "en": "husk",
+      "fr": "zombie momifié"
+    },
+    "image": "husk.png",
+    "behavior": "hostile",
+    "health": 20,
+    "type": "monstre",
+    "damage": 3,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "1.10 (16w20a)"
+  },
+  {
+    "name": {
+      "en": "rabbit",
+      "fr": "lapin"
+    },
+    "image": "rabbit.png",
+    "behavior": "passive",
+    "health": 3,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.5,
+    "width": 0.4,
+    "version": "1.8 (14w27a)"
+  },
+  {
+    "name": {
+      "en": "mooshroom",
+      "fr": "champimeuh"
+    },
+    "image": "mooshroom.png",
+    "behavior": "passive",
+    "health": 10,
+    "type": "animal",
+    "damage": 0,
+    "height": 1.4,
+    "width": 0.9,
+    "version": "Beta 1.9pre1"
+  },
+  {
+    "name": {
+      "en": "polar bear",
+      "fr": "ours polaire"
+    },
+    "image": "polar_bear.png",
+    "behavior": "neutral",
+    "health": 30,
+    "type": "animal",
+    "damage": 6,
+    "height": 1.4,
+    "width": 1.4,
+    "version": "1.10 (16w20a)"
+  },
+  {
+    "name": {
+      "en": "bat",
+      "fr": "chauve-souris"
+    },
+    "image": "bat.png",
+    "behavior": "passive",
+    "health": 6,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.9,
+    "width": 0.5,
+    "version": "1.4.2 (12w38a)"
+  },
+  {
+    "name": {
+      "en": "donkey",
+      "fr": "âne"
+    },
+    "image": "donkey.png",
+    "behavior": "passive",
+    "health": 30,
+    "type": "animal",
+    "damage": 0,
+    "height": 1.6,
+    "width": 1.3965,
+    "version": "1.6.1 (13w16a)"
+  },
+  {
+    "name": {
+      "en": "mule",
+      "fr": "mule"
+    },
+    "image": "mule.png",
+    "behavior": "passive",
+    "health": 30,
+    "type": "animal",
+    "damage": 0,
+    "height": 1.6,
+    "width": 1.4,
+    "version": "1.6.1 (13w16a)"
+  },
+  {
+    "name": {
+      "en": "cat",
+      "fr": "chat"
+    },
+    "image": "cat.png",
+    "behavior": "passive",
+    "health": 10,
+    "type": "animal",
+    "damage": 3,
+    "height": 0.7,
+    "width": 0.6,
+    "version": "1.2.1 (12w04a)"
+  },
+  {
+    "name": {
+      "en": "horse",
+      "fr": "cheval"
+    },
+    "image": "horse.png",
+    "behavior": "passive",
+    "health": 30,
+    "type": "animal",
+    "damage": 0,
+    "height": 1.6,
+    "width": 1.4,
+    "version": "1.6.1 (13w16a)"
+  },
+  {
+    "name": {
+      "en": "skeleton_horse",
+      "fr": "cheval squelette"
+    },
+    "image": "skeleton_horse.png",
+    "behavior": "defensive",
+    "health": 15,
+    "type": "animal",
+    "damage": 0,
+    "height": 1.6,
+    "width": 1.4,
+    "version": "1.9 (15w38a)"
+  },
+  {
+    "name": {
+      "en": "zombie_horse",
+      "fr": "cheval zombie"
+    },
+    "image": "zombie_horse.png",
+    "behavior": "passive",
+    "health": 15,
+    "type": "animal",
+    "damage": 0,
+    "height": 1.6,
+    "width": 1.4,
+    "version": "1.9 (15w38a)"
+  },
+  {
+    "name": {
+      "en": "villager",
+      "fr": "villageois"
+    },
+    "image": "villager.png",
+    "behavior": "passive",
+    "health": 20,
+    "type": "villageois",
+    "damage": 0,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "Beta 1.9pre1"
+  },
+  {
+    "name": {
+      "en": "witch",
+      "fr": "sorcière"
+    },
+    "image": "witch.png",
+    "behavior": "hostile",
+    "health": 26,
+    "type": "monstre",
+    "damage": 6,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "1.4.2 (12w38a)"
+  },
+  {
+    "name": {
+      "en": "elder guardian",
+      "fr": "grand gardien"
+    },
+    "image": "elder_guardian.png",
+    "behavior": "hostile",
+    "health": 80,
+    "type": "monstre",
+    "damage": 8,
+    "height": 1.9975,
+    "width": 1.9975,
+    "version": "1.8 (14w25a)"
+  },
+  {
+    "name": {
+      "en": "zombie villager",
+      "fr": "villageois zombie"
+    },
+    "image": "zombie_villager.png",
+    "behavior": "hostile",
+    "health": 20,
+    "type": "monstre",
+    "damage": 3,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "1.4.2 (12w32a)"
+  },
+  {
+    "name": {
+      "en": "baby_zombie",
+      "fr": "bébé zombie"
+    },
+    "image": "baby_zombie.png",
+    "behavior": "hostile",
+    "health": 20,
+    "type": "monstre",
+    "damage": 3,
+    "height": 0.975,
+    "width": 0.3,
+    "version": "1.6.2 (13w23a)"
+  },
+  {
+    "name": {
+      "en": "spider_jockey_skeleton",
+      "fr": "araignée chevauchée par un squelette"
+    },
+    "image": "spider_jockey_skeleton.png",
+    "behavior": "hostile",
+    "health": 36,
+    "type": "monstre",
+    "damage": 6,
+    "height": 2.9,
+    "width": 1.4,
+    "version": "Alpha 1.0.17"
+  },
+  {
+    "name": {
+      "en": "spider_jockey_wither_skeleton",
+      "fr": "araignée chevauchée par un Wither squelette"
+    },
+    "image": "spider_jockey_wither_skeleton.png",
+    "behavior": "hostile",
+    "health": 36,
+    "type": "monstre",
+    "damage": 12,
+    "height": 2.9,
+    "width": 1.4,
+    "version": "Alpha 1.0.17"
+  },
+  {
+    "name": {
+      "en": "chicken_jockey",
+      "fr": "poulet chevauchée par un zombie"
+    },
+    "image": "chicken_jockey.png",
+    "behavior": "hostile",
+    "health": 24,
+    "type": "monstre",
+    "damage": 3,
+    "height": 1.975,
+    "width": 0.3,
+    "version": "1.7.4 (13w49a)"
+  },
+  {
+    "name": {
+      "en": "Chicken Zombified Piglin Jockey",
+      "fr": "poulet chevauchée par un piglin zombifié"
+    },
+    "image": "chicken_zombified_piglin_jockey.png",
+    "behavior": "hostile",
+    "health": 24,
+    "type": "monstre",
+    "damage": 8,
+    "height": 1.975,
+    "width": 0.3,
+    "version": "1.16 (20w09a)"
+  },
+  {
+    "name": {
+      "en": "killer_bunny",
+      "fr": "lapin tueur"
+    },
+    "image": "killer_bunny.png",
+    "behavior": "hostile",
+    "health": 3,
+    "type": "animal",
+    "damage": 8,
+    "height": 0.5,
+    "width": 0.4,
+    "version": "1.8 (14w27a)"
+  },
+  {
+    "name": {
+      "en": "piglin brute",
+      "fr": "piglin brute"
+    },
+    "image": "piglin_brute.png",
+    "behavior": "hostile",
+    "health": 50,
+    "type": "monstre",
+    "damage": 13,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "1.16.2 (20w27a)"
+  },
+  {
+    "name": {
+      "en": "zombified piglin",
+      "fr": "piglin zombifié"
+    },
+    "image": "zombified_piglin.png",
+    "behavior": "neutral",
+    "health": 20,
+    "type": "monstre",
+    "damage": 8,
+    "height": 1.95,
+    "width": 0.6,
+    "version": "1.16 (20w07a)"
+  },
+  {
+    "name": {
+      "en": "wolf (tamed)",
+      "fr": "loup apprivoisé"
+    },
+    "image": "wolf_tamed.png",
+    "behavior": "protecteur",
+    "health": 20,
+    "type": "animal",
+    "damage": 4,
+    "height": 0.85,
+    "width": 0.6,
+    "version": "1.8 (14w27a)"
+  },
+  {
+    "name": {
+      "en": "wolf (Angry)",
+      "fr": "loup sauvage"
+    },
+    "image": "wolf_angry.png",
+    "behavior": "hostile",
+    "health": 8,
+    "type": "animal",
+    "damage": 4,
+    "height": 0.85,
+    "width": 0.6,
+    "version": "1.8 (14w27a)"
+  },
+  {
+    "name": {
+      "en": "camel",
+      "fr": "dromadaire"
+    },
+    "image": "camel.png",
+    "behavior": "passive",
+    "health": 32,
+    "type": "animal",
+    "damage": 0,
+    "height": 2.375,
+    "width": 1.7,
+    "version": "1.20"
+  },
+  {
+    "name": {
+      "en": "cod",
+      "fr": "morue"
+    },
+    "image": "cod.png",
+    "behavior": "passive",
+    "health": 3,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.3,
+    "width": 0.5,
+    "version": "1.13 (18w08b)"
+  },
+  {
+    "name": {
+      "en": "salmon",
+      "fr": "saumon"
+    },
+    "image": "salmon.png",
+    "behavior": "passive",
+    "health": 3,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.4,
+    "width": 0.7,
+    "version": "1.13 (18w08b)"
+  },
+  {
+    "name": {
+      "en": "sniffer",
+      "fr": "renifleur"
+    },
+    "image": "sniffer.png",
+    "behavior": "passive",
+    "health": 14,
+    "type": "animal",
+    "damage": 0,
+    "height": 1.75,
+    "width": 1.9,
+    "version": "1.13 (18w08b)"
+  },
+  {
+    "name": {
+      "en": "squid",
+      "fr": "poulpe"
+    },
+    "image": "squid.png",
+    "behavior": "passive",
+    "health": 10,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.8,
+    "width": 0.8,
+    "version": "1.17 (20w45a)"
+  },
+  {
+    "name": {
+      "en": "tadpole",
+      "fr": "têtard"
+    },
+    "image": "tadpole.png",
+    "behavior": "passive",
+    "health": 6,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.3,
+    "width": 0.4,
+    "version": "1.19 (22w11a)"
+  },
+  {
+    "name": {
+      "en": "tropical fish",
+      "fr": "poisson-clown"
+    },
+    "image": "clownfish.png",
+    "behavior": "passive",
+    "health": 3,
+    "type": "animal",
+    "damage": 0,
+    "height": 0.4,
+    "width": 0.5,
+    "version": "1.13 (18w08b)"
+  },
+  {
+    "name": {
+      "en": "pufferfish",
+      "fr": "poisson-globe"
+    },
+    "image": "pufferfish.png",
+    "behavior": "defensive",
+    "health": 3,
+    "type": "animal",
+    "damage": 3,
+    "height": 0.7,
+    "width": 0.7,
+    "version": "1.13 (18w08b)"
+  }
+]

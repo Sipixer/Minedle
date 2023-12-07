@@ -14,7 +14,7 @@ i18next.init({
         StartGame: "Start Game",
         solo: "Single Player",
         multi: "Multiplayer",
-        attempts: "Attempts ({{count}} / {{max}})",
+        attempts: "Attempts {{count}}",
         mob_name: "Mob Name",
         reset: "Reset",
         stats: {
@@ -38,7 +38,7 @@ i18next.init({
         StartGame: "Lancer une partie",
         solo: "Un Joueur",
         multi: "Multijoueur",
-        attempts: "Tentatives ({{count}} / {{max}})",
+        attempts: "Tentatives {{count}}",
         mob_name: "Nom du Mob",
         reset: "Réinitialiser",
         stats: {
