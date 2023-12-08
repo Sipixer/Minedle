@@ -30,7 +30,6 @@ function startSolo() {
   gameStatus.type = "solo";
   gameStatus.status = "guessing";
   gameStatus.difficulty = difficulty;
-  console.log("start solo", gameStatus);
   rerender();
 }
 

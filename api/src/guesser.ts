@@ -8,7 +8,6 @@ export function checkGuess(
   content: object | string | MobGuessDiff;
 } {
   const mobInfo = Mobs.findByID(mobId);
-  console.log(mobInfo?.name.fr);
   if (!mobInfo) return { status: 400, content: "Mob not found" };
   if (!mobToGuessInfo) return { status: 400, content: "Mob not found" };
   const mobDiff = compareTwoMobs(mobInfo, mobToGuessInfo);
@@ -65,6 +64,7 @@ const versions = [
   "1.12 (17w13a)",
   "1.12 (17w16a)",
   "1.13 (18w07a)",
+  "1.13 (18w08b)",
   "1.13 (18w11a)",
   "1.14 (18w43a)",
   "1.14 (18w44a)",
@@ -88,6 +88,9 @@ function compareTwoVersions(
 ): MobDiff {
   const firstIndex = versions.indexOf(guessedVersion);
   const secondIndex = versions.indexOf(realVersion);
+
+  if (guessedVersion == realVersion)
+    return { compare: true, value: guessedVersion };
 
   if (firstIndex === -1 || secondIndex === -1) {
     // Gérer les cas où une version n'est pas trouvée dans le tableau

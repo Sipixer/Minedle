@@ -23,12 +23,12 @@ app.get("/", (req, res) => {
 
 app.get("/newGame", (req, res) => {
   const mob = Mobs.getRandomMob();
-  const sessionId = "test";
+  const sessionId = crypto.randomBytes(20).toString("hex");
   if (!gameSessions.has(sessionId)) {
     gameSessions.set(sessionId, mob);
   }
 
-  res.json({ gameId: sessionId });
+  res.json({ gameID: sessionId });
 });
 
 app.post("/guess", (req, res) => {

@@ -17,6 +17,7 @@ i18next.init({
         attempts: "Attempts {{count}}",
         mob_name: "Mob Name",
         reset: "Reset",
+        go_to_menu: "Go to menu",
         stats: {
           behavior: "Behavior",
           health: "Health",
@@ -41,6 +42,7 @@ i18next.init({
         attempts: "Tentatives {{count}}",
         mob_name: "Nom du Mob",
         reset: "Réinitialiser",
+        go_to_menu: "Retour au menu",
         stats: {
           behavior: "Comportement",
           health: "Vie",

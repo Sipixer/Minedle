@@ -15,8 +15,6 @@ export type Mobs = {
   version: string;
 }[];
 
-console.log("getmobs");
-
 export let mobs: Mobs = [];
 
 fetch(URL + "public/mobs.json")

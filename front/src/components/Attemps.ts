@@ -8,32 +8,62 @@ import { URL } from "../utils/variables";
 export class Attempts {
   private container: HTMLDivElement;
   private i18next: i18n;
-  private gameID: string;
+  private gameID?: string;
   private attempts = [] as MobGuessDiff[];
   private table?: HTMLTableElement;
 
   private attemptsText: HTMLDivElement;
 
-  constructor(i18next: i18n, gameId: string) {
+  constructor(i18next: i18n) {
     this.container = document.createElement("div");
     this.container.classList.add("attempts");
     this.i18next = i18next;
-    this.gameID = gameId;
-
+    this.getGameID();
     const div = document.createElement("div");
     div.classList.add("attemptsHeader");
     const button = Button({
       text: i18next.t("reset"),
-      onClick: goToMenu,
+      onClick: () => {
+        this.reset();
+      },
     });
     div.appendChild(button);
+
     this.attemptsText = document.createElement("p");
     this.attemptsText.textContent = this.i18next.t("attempts", {
       count: this.attempts.length,
       max: 10,
     });
     div.appendChild(this.attemptsText);
+    const mainMenu = Button({
+      text: i18next.t("go_to_menu"),
+      onClick: goToMenu,
+    });
+    div.appendChild(mainMenu);
     this.container.appendChild(div);
+  }
+
+  private getGameID() {
+    fetch(URL + "newGame", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        this.gameID = res.gameID;
+      });
+  }
+
+  private reset() {
+    this.getGameID();
+    this.attempts = [];
+    this.renderAtemptText();
+    if (this.table) {
+      this.table.remove();
+      this.table = undefined;
+    }
   }
 
   private renderAtemptText() {
